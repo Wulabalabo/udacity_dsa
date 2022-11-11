@@ -44,3 +44,29 @@ Print the answer as a part of a message::
 to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
+
+if __name__ == '__main__':
+  # part A:
+  called_numbers = []
+  for i in range(len(calls)):
+      if calls[i][0][:5] == '(080)':
+          if calls[i][1][0] == '(':
+              par_index = calls[i][1].find(')')
+              called_numbers.append(calls[i][1][:par_index+1])
+          elif calls[i][1][:3] == '140':
+              called_numbers.append('140')
+          else:
+              called_numbers.append(calls[i][1][:4])  
+  
+  called_numbers = sorted(set(called_numbers))
+  print("The numbers called by people in Bangalore have codes:")
+  for code in called_numbers:
+      print(code)
+
+  # part B:
+  count = 0
+  for item in called_numbers:
+    if item == "(080)":
+      count +=1
+  percent = count / len(called_numbers) * 100
+  print("{0} percent of calls from fixed lines in Bangalore are callsto other fixed lines in Bangalore.".format(round(percent,2)))
