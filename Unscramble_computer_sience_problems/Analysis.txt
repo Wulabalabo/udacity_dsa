@@ -1,0 +1,21 @@
+Analysis
+
+Task 0:
+ - Time Complexity - O(1)
+ - This algorithm is constant time because has a running time independent of the input size
+
+Task 1:
+ - Time Complexity - O(n)
+ - The algorithm is linear temporal because even though it has two independent for loops that depend on the input, each iterating from 1 to n, these loops result in O(2n), So the result of the time complexity is simplified to O(n)
+
+Task 2:
+ - Time Complexity - O(n)
+ - The algorithm is linear time because it has a for loop iterating from 1 to n, which causes the run time to grow directly in proportion to n.So the result of the time complexity is simplified to O(n)
+
+Task 3:
+ - Time Complexity - O(nlog(n))
+ - The algorithm is superlinear temporal because even though it has two independent for loops that depend on the input, each loop iterates from 1 to n, resulting in O(2n); It also has a sorting function, which is 0 (nlogn). Combining these two results yields 0(2n + nlogn). So the time complexity can be reduced to O(nlog(n))
+   
+Task 4:
+ - Time Complexity - O(nlog(n))
+ - The algorithm is superlinear in time because even though it has two independent for loops that depend on the input, each loop iterates from 1 to n, resulting in O(2n); It also has a sorting function, which is 0 (nlogn). Combining these two results yields 0(2n + nlogn). So the time complexity can be reduced to O(nlog(n))

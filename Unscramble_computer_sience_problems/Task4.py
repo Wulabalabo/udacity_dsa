@@ -34,8 +34,9 @@ if __name__ == '__main__':
     call_senders_susp = []
 
     for call_sender in call_senders:
-        if (call_sender not in call_receivers and call_sender not in message_senders and
-                call_sender not in message_receivers):
+        if (call_sender not in call_receivers 
+        and call_sender not in message_senders 
+        and call_sender not in message_receivers):
             call_senders_susp.append(call_sender)
 
     call_senders_susp.sort()
