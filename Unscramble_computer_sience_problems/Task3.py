@@ -58,9 +58,9 @@ if __name__ == '__main__':
           else:
               called_numbers.append(calls[i][1][:4])  
   
-  called_numbers = sorted(set(called_numbers))
+  unique_called_numbers = sorted(set(called_numbers))
   print("The numbers called by people in Bangalore have codes:")
-  for code in called_numbers:
+  for code in unique_called_numbers:
       print(code)
 
   # part B:
